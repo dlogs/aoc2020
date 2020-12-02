@@ -1,0 +1,1 @@
+ts-node %1/solver.ts %2
