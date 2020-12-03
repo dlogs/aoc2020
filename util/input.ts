@@ -3,7 +3,7 @@ import { readFile } from 'fs';
 export function readLinesAsArray(file: string, callback: (lines: string[]) => any) {
   readFile(file, 'utf8', (err, data) => {
     if (err) throw err;
-    callback(data.split('\n').filter(s => s.length > 0))
+    callback(data.split('\n').map(s => s.trim()).filter(s => s.length > 0))
   });
 }
 
