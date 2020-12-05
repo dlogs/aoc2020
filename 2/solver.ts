@@ -1,7 +1,7 @@
 import part from '../util/part'
-import { readLinesAsArray } from '../util/input'
+import { asArray } from '../util/input'
 
-readLinesAsArray("2/input.txt", lines => {
+asArray(lines => {
   if (part == 1) {
     console.warn(lines.map(getParts).filter(passwordMatches1).length)
   } else {

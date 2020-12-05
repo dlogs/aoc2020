@@ -1,9 +1,9 @@
 import part from '../util/part'
-import { readLinesAsArray } from '../util/input'
+import { asArray } from '../util/input'
 
 const tree = '#';
 const snow = '.';
-readLinesAsArray("3/input.txt", lines => {
+asArray(lines => {
   if (part == 1) {
     let position = new Position()
     const hill = new Hill(lines)

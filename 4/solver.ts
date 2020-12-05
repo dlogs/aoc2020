@@ -1,7 +1,7 @@
-import { readLinesAsArrayByBlanks } from "../util/input";
+import { asArrayByBlanks } from "../util/input";
 import part from "../util/part";
 
-readLinesAsArrayByBlanks("4/input.txt", lines => {
+asArrayByBlanks(lines => {
   if (part === 1) {
     console.warn(lines.filter(isValidPassport1).length);
   } else {

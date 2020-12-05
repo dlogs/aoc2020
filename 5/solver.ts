@@ -1,7 +1,7 @@
-import { readLinesAsArray } from "../util/input";
+import { asArray } from "../util/input";
 import part from "../util/part";
 
-readLinesAsArray("5/input.txt", lines => {
+asArray(lines => {
   if (part === 1) {
     let max = 0
     for (const line of lines) {

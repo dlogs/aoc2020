@@ -1,7 +1,7 @@
 import part from '../util/part'
-import { readLinesAsIntArray } from '../util/input'
+import { asIntArray } from '../util/input'
 
-readLinesAsIntArray("1/input.txt", nums => {
+asIntArray(nums => {
   if (part == 1) {
     nums.some(n1 =>
       nums.some(n2 => {
